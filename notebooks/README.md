@@ -1,0 +1,21 @@
+## Notebooks
+
+These notebooks are organized to match the project tasks.
+
+### Task 1
+
+- `eda-fraud-data.ipynb`: EDA for `Fraud_Data.csv` (+ country analysis after IP merge)
+- `eda-creditcard.ipynb`: EDA for `creditcard.csv`
+- `feature-engineering.ipynb`: Feature engineering + preprocessing (calls the same code as the scripts)
+
+### Data paths
+
+Raw data goes in `data/raw/`:
+
+- `Fraud_Data.csv`
+- `IpAddress_to_Country.csv`
+- `creditcard.csv`
+
+Processed outputs go to `data/processed/` (gitignored).
+
+
