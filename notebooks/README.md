@@ -8,6 +8,10 @@ These notebooks are organized to match the project tasks.
 - `eda-creditcard.ipynb`: EDA for `creditcard.csv`
 - `feature-engineering.ipynb`: Feature engineering + preprocessing (calls the same code as the scripts)
 
+### Task 2
+
+- `modeling.ipynb`: baseline + ensemble models with AUC-PR / F1 / confusion matrix and Stratified K-Fold CV
+
 ### Data paths
 
 Raw data goes in `data/raw/`:
