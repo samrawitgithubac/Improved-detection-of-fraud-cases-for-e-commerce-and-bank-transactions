@@ -50,3 +50,30 @@ Outputs are written to `data/processed/`, including:
 - `*_preprocessor.joblib`
 - `*_X_train.npz`, `*_y_train.npy`, `*_X_train_smote.npz`, ...
 - `*_task1_metadata.json` (includes class distributions before/after SMOTE)
+
+## Task 2 — Modeling
+
+Train baseline + ensemble models with Stratified K-Fold CV and evaluate using AUC-PR / F1 / confusion matrix:
+
+```bash
+python -m scripts.task2_train --dataset all
+```
+
+Outputs:
+
+- `models/task2_<dataset>_<model>.joblib`
+- `reports/task2_<dataset>_results.json`
+
+## Task 3 — Explainability (SHAP)
+
+Install SHAP (optional dependency):
+
+```bash
+pip install -r requirements-task3.txt
+```
+
+Then run the notebook:
+
+- `notebooks/shap-explainability.ipynb`
+
+Note: Task 3 expects Task 2 models to exist. Run Task 2 first if needed.

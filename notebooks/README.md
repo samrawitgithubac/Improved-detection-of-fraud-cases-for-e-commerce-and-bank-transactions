@@ -12,6 +12,10 @@ These notebooks are organized to match the project tasks.
 
 - `modeling.ipynb`: baseline + ensemble models with AUC-PR / F1 / confusion matrix and Stratified K-Fold CV
 
+### Task 3
+
+- `shap-explainability.ipynb`: SHAP global + local explanations (TP / FP / FN)
+
 ### Data paths
 
 Raw data goes in `data/raw/`:
