@@ -1,0 +1,59 @@
+{
+  "dataset": "fraud",
+  "n_rows": 30222,
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42
+  },
+  "cv_splits": 5,
+  "models": {
+    "logreg": {
+      "cv": {
+        "n_splits": 5,
+        "auc_pr_mean": 0.680561320840885,
+        "auc_pr_std": 0.01743252563690526,
+        "f1_mean": 0.6181296920115373,
+        "f1_std": 0.015928932504549475
+      },
+      "test": {
+        "auc_pr": 0.6914262594457254,
+        "f1": 0.6268656716417911,
+        "confusion_matrix": [
+          [
+            5171,
+            294
+          ],
+          [
+            181,
+            399
+          ]
+        ]
+      },
+      "model_path": "models/task2_fraud_logreg.joblib"
+    },
+    "random_forest": {
+      "cv": {
+        "n_splits": 5,
+        "auc_pr_mean": 0.7153496739305094,
+        "auc_pr_std": 0.013879189743560342,
+        "f1_mean": 0.6974448812398387,
+        "f1_std": 0.01618300894779367
+      },
+      "test": {
+        "auc_pr": 0.7309467984627795,
+        "f1": 0.7021943573667712,
+        "confusion_matrix": [
+          [
+            5424,
+            41
+          ],
+          [
+            244,
+            336
+          ]
+        ]
+      },
+      "model_path": "models/task2_fraud_random_forest.joblib"
+    }
+  }
+}
